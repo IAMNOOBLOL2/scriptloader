@@ -2,14 +2,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jen
 
 local Window = OrionLib:MakeWindow({Name = "Script Loader - FreeMium", HidePremium = false, SaveConfig = true, ConfigFolder = "SL-Freemium"})
 
-local Tab = Window:MakeTab({
+local MainTab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
+local Section = MainTab:AddSection({
 	Name = "Main"
 })
 
-Tab:AddLabel("For add scripts add the name of the script, the script and click add ")
